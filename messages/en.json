@@ -1,0 +1,269 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "close": "Close",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "continue": "Continue",
+    "submit": "Submit",
+    "search": "Search",
+    "filter": "Filter",
+    "all": "All",
+    "none": "None",
+    "active": "Active",
+    "inactive": "Inactive",
+    "yes": "Yes",
+    "no": "No",
+    "success": "Success",
+    "error": "An error occurred",
+    "saving": "Saving...",
+    "deleting": "Deleting...",
+    "noData": "No data",
+    "viewAll": "View all"
+  },
+  "nav": {
+    "services": "Services",
+    "barbers": "Barbers",
+    "gallery": "Gallery",
+    "location": "Location",
+    "bookNow": "Book Now",
+    "dashboard": "Dashboard",
+    "bookings": "Bookings",
+    "team": "Team",
+    "availability": "Availability",
+    "settings": "Settings",
+    "logout": "Sign Out",
+    "mySchedule": "My Schedule",
+    "myAvailability": "My Availability"
+  },
+  "landing": {
+    "hero": {
+      "bookNow": "Book Now",
+      "viewServices": "View Services"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Find the best service for your look",
+      "duration": "{duration} min"
+    },
+    "team": {
+      "title": "Our Team",
+      "subtitle": "Meet our professionals"
+    },
+    "gallery": {
+      "title": "Gallery"
+    },
+    "location": {
+      "title": "Location & Contact",
+      "address": "Address",
+      "openHours": "Opening Hours",
+      "phone": "Phone",
+      "getDirections": "Get Directions"
+    },
+    "footer": {
+      "rights": "All rights reserved"
+    }
+  },
+  "booking": {
+    "progress": {
+      "service": "Service",
+      "barber": "Barber",
+      "schedule": "Schedule"
+    },
+    "selectService": {
+      "title": "Select Service",
+      "subtitle": "Choose the service you want",
+      "duration": "{duration} min",
+      "selected": "Selected",
+      "continue": "Continue"
+    },
+    "selectBarber": {
+      "title": "Select Barber",
+      "subtitle": "Choose your preferred barber",
+      "anyBarber": "Any Barber",
+      "anyBarberDesc": "We will assign the next available barber",
+      "priceRange": "Rp {min} – Rp {max}",
+      "price": "Rp {price}",
+      "unavailable": "Not available for this service",
+      "continue": "Continue"
+    },
+    "schedule": {
+      "title": "Pick a Schedule",
+      "subtitle": "Choose a time that works for you",
+      "morning": "Morning",
+      "afternoon": "Afternoon",
+      "evening": "Evening",
+      "noSlots": "No available slots",
+      "yourDetails": "Your Details",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Enter your full name",
+      "phone": "WhatsApp Number",
+      "phonePlaceholder": "08xxxxxxxxxx",
+      "summary": "Booking Summary",
+      "confirmBooking": "Confirm Booking",
+      "termsNote": "By booking, you agree to our terms of service"
+    },
+    "confirmation": {
+      "title": "Booking Confirmed!",
+      "subtitle": "See you at your session",
+      "service": "Service",
+      "barber": "Barber",
+      "date": "Date",
+      "time": "Time",
+      "location": "Location",
+      "price": "Price",
+      "payAtShop": "Payment is made at the shop",
+      "addToCalendar": "Add to Calendar",
+      "contactShop": "Contact Us",
+      "bookAgain": "Book Again"
+    }
+  },
+  "admin": {
+    "login": {
+      "title": "Sign In",
+      "subtitle": "Sign in to your admin panel",
+      "email": "Email",
+      "emailPlaceholder": "Enter your email",
+      "password": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "signIn": "Sign In",
+      "signingIn": "Signing in...",
+      "error": {
+        "invalidCredentials": "Invalid email or password",
+        "generic": "An error occurred. Please try again."
+      }
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "todayAppointments": "Today's Appointments",
+      "weekBookings": "This Week's Bookings",
+      "allTimeBookings": "All-Time Bookings",
+      "todaySchedule": "Today's Schedule",
+      "noAppointmentsToday": "No appointments today",
+      "customer": "Customer",
+      "service": "Service",
+      "barber": "Barber",
+      "time": "Time",
+      "status": "Status"
+    },
+    "bookings": {
+      "title": "Bookings",
+      "filterByDate": "Filter by date",
+      "filterByBarber": "Filter by barber",
+      "filterByStatus": "Filter by status",
+      "customer": "Customer",
+      "service": "Service",
+      "barber": "Barber",
+      "dateTime": "Date & Time",
+      "status": "Status",
+      "actions": "Actions",
+      "confirm": "Confirm",
+      "markDone": "Mark Done",
+      "cancel": "Cancel",
+      "noBookings": "No bookings found",
+      "statuses": {
+        "pending": "Pending",
+        "confirmed": "Confirmed",
+        "done": "Done",
+        "cancelled": "Cancelled"
+      }
+    },
+    "team": {
+      "title": "Team",
+      "addBarber": "Add Barber",
+      "editBarber": "Edit Barber",
+      "deleteBarber": "Delete Barber",
+      "deleteConfirm": "Are you sure you want to delete this barber?",
+      "name": "Name",
+      "namePlaceholder": "Barber name",
+      "bio": "Bio",
+      "bioPlaceholder": "Short description",
+      "specialty": "Specialty",
+      "specialtyPlaceholder": "e.g. Pompadour, Undercut",
+      "photo": "Photo",
+      "uploadPhoto": "Upload Photo",
+      "services": "Services & Pricing",
+      "price": "Price (Rp)",
+      "available": "Available",
+      "noBarbers": "No barbers yet. Add your first barber.",
+      "manageServices": "Manage Services"
+    },
+    "services": {
+      "title": "Services",
+      "addService": "Add Service",
+      "editService": "Edit Service",
+      "deleteService": "Delete Service",
+      "deleteConfirm": "Are you sure you want to delete this service?",
+      "name": "Service Name",
+      "namePlaceholder": "e.g. Haircut",
+      "description": "Description",
+      "descriptionPlaceholder": "Service description",
+      "duration": "Duration (minutes)",
+      "noServices": "No services yet. Add your first service.",
+      "priceNote": "Pricing is set per barber in the Team page"
+    },
+    "availability": {
+      "title": "Availability",
+      "selectBarber": "Select a barber to manage availability",
+      "manageAvailability": "{name}'s Availability",
+      "weeklySchedule": "Weekly Schedule",
+      "blockedDates": "Days Off",
+      "addBlockedDate": "Add Day Off",
+      "reason": "Reason (optional)",
+      "reasonPlaceholder": "e.g. Annual leave",
+      "noBlockedDates": "No days off",
+      "working": "Working",
+      "openTime": "Start",
+      "closeTime": "End",
+      "saveSchedule": "Save Schedule",
+      "days": {
+        "0": "Sunday",
+        "1": "Monday",
+        "2": "Tuesday",
+        "3": "Wednesday",
+        "4": "Thursday",
+        "5": "Friday",
+        "6": "Saturday"
+      }
+    },
+    "settings": {
+      "title": "Shop Settings",
+      "logo": "Shop Logo",
+      "uploadLogo": "Upload Logo",
+      "brandColor": "Brand Color",
+      "shopName": "Shop Name",
+      "address": "Address",
+      "city": "City",
+      "province": "Province",
+      "phone": "Phone Number",
+      "email": "Email",
+      "socialLinks": "Social Media",
+      "instagram": "Instagram",
+      "whatsapp": "WhatsApp",
+      "googleMaps": "Google Maps URL",
+      "saveSettings": "Save Settings",
+      "settingsSaved": "Settings saved successfully"
+    }
+  },
+  "barber": {
+    "schedule": {
+      "title": "My Schedule",
+      "today": "Today",
+      "thisWeek": "This Week",
+      "noAppointments": "No appointments",
+      "customer": "Customer",
+      "service": "Service",
+      "time": "Time"
+    },
+    "availability": {
+      "title": "My Availability",
+      "subtitle": "Set your working hours and days off"
+    }
+  }
+}

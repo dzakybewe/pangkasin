@@ -1,0 +1,268 @@
+{
+  "common": {
+    "loading": "Memuat...",
+    "save": "Simpan",
+    "cancel": "Batal",
+    "delete": "Hapus",
+    "edit": "Ubah",
+    "add": "Tambah",
+    "close": "Tutup",
+    "confirm": "Konfirmasi",
+    "back": "Kembali",
+    "next": "Lanjut",
+    "continue": "Lanjutkan",
+    "submit": "Kirim",
+    "search": "Cari",
+    "filter": "Filter",
+    "all": "Semua",
+    "none": "Tidak ada",
+    "active": "Aktif",
+    "inactive": "Tidak aktif",
+    "yes": "Ya",
+    "no": "Tidak",
+    "success": "Berhasil",
+    "error": "Terjadi kesalahan",
+    "saving": "Menyimpan...",
+    "deleting": "Menghapus...",
+    "noData": "Tidak ada data",
+    "viewAll": "Lihat semua"
+  },
+  "nav": {
+    "services": "Layanan",
+    "barbers": "Barber",
+    "gallery": "Galeri",
+    "location": "Lokasi",
+    "bookNow": "Pesan Sekarang",
+    "dashboard": "Dashboard",
+    "bookings": "Pemesanan",
+    "team": "Tim",
+    "availability": "Ketersediaan",
+    "settings": "Pengaturan",
+    "logout": "Keluar",
+    "mySchedule": "Jadwal Saya",
+    "myAvailability": "Ketersediaan Saya"
+  },
+  "landing": {
+    "hero": {
+      "bookNow": "Pesan Sekarang",
+      "viewServices": "Lihat Layanan"
+    },
+    "services": {
+      "title": "Layanan Kami",
+      "subtitle": "Temukan layanan terbaik untuk penampilan Anda",
+      "duration": "{duration} menit"
+    },
+    "team": {
+      "title": "Tim Kami",
+      "subtitle": "Bertemu dengan para profesional kami"
+    },
+    "gallery": {
+      "title": "Galeri"
+    },
+    "location": {
+      "title": "Lokasi & Kontak",
+      "address": "Alamat",
+      "openHours": "Jam Buka",
+      "phone": "Telepon",
+      "getDirections": "Petunjuk Arah"
+    },
+    "footer": {
+      "rights": "Hak cipta dilindungi"
+    }
+  },
+  "booking": {
+    "progress": {
+      "service": "Layanan",
+      "barber": "Barber",
+      "schedule": "Jadwal"
+    },
+    "selectService": {
+      "title": "Pilih Layanan",
+      "subtitle": "Pilih layanan yang Anda inginkan",
+      "duration": "{duration} menit",
+      "selected": "Dipilih",
+      "continue": "Lanjutkan"
+    },
+    "selectBarber": {
+      "title": "Pilih Barber",
+      "subtitle": "Pilih barber pilihan Anda",
+      "anyBarber": "Barber Mana Saja",
+      "anyBarberDesc": "Kami pilihkan barber tersedia",
+      "priceRange": "Rp {min} – Rp {max}",
+      "price": "Rp {price}",
+      "unavailable": "Tidak tersedia untuk layanan ini",
+      "continue": "Lanjutkan"
+    },
+    "schedule": {
+      "title": "Pilih Jadwal",
+      "subtitle": "Pilih waktu yang sesuai untuk Anda",
+      "morning": "Pagi",
+      "afternoon": "Siang",
+      "evening": "Malam",
+      "noSlots": "Tidak ada slot tersedia",
+      "yourDetails": "Data Diri",
+      "fullName": "Nama Lengkap",
+      "fullNamePlaceholder": "Masukkan nama lengkap",
+      "phone": "Nomor WhatsApp",
+      "phonePlaceholder": "08xxxxxxxxxx",
+      "summary": "Ringkasan Pemesanan",
+      "confirmBooking": "Konfirmasi Pemesanan",
+      "termsNote": "Dengan memesan, Anda menyetujui syarat layanan kami"
+    },
+    "confirmation": {
+      "title": "Pemesanan Dikonfirmasi!",
+      "subtitle": "Sampai jumpa di sesi Anda",
+      "service": "Layanan",
+      "barber": "Barber",
+      "date": "Tanggal",
+      "time": "Waktu",
+      "location": "Lokasi",
+      "price": "Harga",
+      "payAtShop": "Pembayaran dilakukan di tempat",
+      "addToCalendar": "Tambah ke Kalender",
+      "contactShop": "Hubungi Kami",
+      "bookAgain": "Pesan Lagi"
+    }
+  },
+  "admin": {
+    "login": {
+      "title": "Masuk",
+      "subtitle": "Masuk ke panel admin Anda",
+      "email": "Email",
+      "emailPlaceholder": "Masukkan email",
+      "password": "Kata Sandi",
+      "passwordPlaceholder": "Masukkan kata sandi",
+      "signIn": "Masuk",
+      "signingIn": "Sedang masuk...",
+      "error": {
+        "invalidCredentials": "Email atau kata sandi salah",
+        "generic": "Terjadi kesalahan. Coba lagi."
+      }
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "todayAppointments": "Janji Hari Ini",
+      "weekBookings": "Pemesanan Minggu Ini",
+      "allTimeBookings": "Total Pemesanan",
+      "todaySchedule": "Jadwal Hari Ini",
+      "noAppointmentsToday": "Tidak ada janji hari ini",
+      "customer": "Pelanggan",
+      "service": "Layanan",
+      "barber": "Barber",
+      "time": "Waktu",
+      "status": "Status"
+    },
+    "bookings": {
+      "title": "Pemesanan",
+      "filterByDate": "Filter tanggal",
+      "filterByBarber": "Filter barber",
+      "filterByStatus": "Filter status",
+      "customer": "Pelanggan",
+      "service": "Layanan",
+      "barber": "Barber",
+      "dateTime": "Tanggal & Waktu",
+      "status": {
+        "pending": "Menunggu",
+        "confirmed": "Terkonfirmasi",
+        "done": "Selesai",
+        "cancelled": "Dibatalkan"
+      },
+      "actions": "Aksi",
+      "confirm": "Konfirmasi",
+      "markDone": "Selesai",
+      "cancel": "Batalkan",
+      "noBookings": "Tidak ada pemesanan"
+    },
+    "team": {
+      "title": "Tim",
+      "addBarber": "Tambah Barber",
+      "editBarber": "Ubah Barber",
+      "deleteBarber": "Hapus Barber",
+      "deleteConfirm": "Apakah Anda yakin ingin menghapus barber ini?",
+      "name": "Nama",
+      "namePlaceholder": "Nama barber",
+      "bio": "Bio",
+      "bioPlaceholder": "Deskripsi singkat",
+      "specialty": "Spesialisasi",
+      "specialtyPlaceholder": "Contoh: Pompadour, Undercut",
+      "photo": "Foto",
+      "uploadPhoto": "Unggah Foto",
+      "services": "Layanan & Harga",
+      "price": "Harga (Rp)",
+      "available": "Tersedia",
+      "noBarbers": "Belum ada barber. Tambahkan barber pertama Anda.",
+      "manageServices": "Kelola Layanan"
+    },
+    "services": {
+      "title": "Layanan",
+      "addService": "Tambah Layanan",
+      "editService": "Ubah Layanan",
+      "deleteService": "Hapus Layanan",
+      "deleteConfirm": "Apakah Anda yakin ingin menghapus layanan ini?",
+      "name": "Nama Layanan",
+      "namePlaceholder": "Contoh: Potong Rambut",
+      "description": "Deskripsi",
+      "descriptionPlaceholder": "Deskripsi layanan",
+      "duration": "Durasi (menit)",
+      "noServices": "Belum ada layanan. Tambahkan layanan pertama Anda.",
+      "priceNote": "Harga diatur per barber di halaman Tim"
+    },
+    "availability": {
+      "title": "Ketersediaan",
+      "selectBarber": "Pilih barber untuk mengatur ketersediaan",
+      "manageAvailability": "Ketersediaan {name}",
+      "weeklySchedule": "Jadwal Mingguan",
+      "blockedDates": "Tanggal Libur",
+      "addBlockedDate": "Tambah Tanggal Libur",
+      "reason": "Alasan (opsional)",
+      "reasonPlaceholder": "Contoh: Cuti tahunan",
+      "noBlockedDates": "Tidak ada tanggal libur",
+      "working": "Bekerja",
+      "openTime": "Mulai",
+      "closeTime": "Selesai",
+      "saveSchedule": "Simpan Jadwal",
+      "days": {
+        "0": "Minggu",
+        "1": "Senin",
+        "2": "Selasa",
+        "3": "Rabu",
+        "4": "Kamis",
+        "5": "Jumat",
+        "6": "Sabtu"
+      }
+    },
+    "settings": {
+      "title": "Pengaturan Toko",
+      "logo": "Logo Toko",
+      "uploadLogo": "Unggah Logo",
+      "brandColor": "Warna Brand",
+      "shopName": "Nama Toko",
+      "address": "Alamat",
+      "city": "Kota",
+      "province": "Provinsi",
+      "phone": "Nomor Telepon",
+      "email": "Email",
+      "socialLinks": "Media Sosial",
+      "instagram": "Instagram",
+      "whatsapp": "WhatsApp",
+      "googleMaps": "Google Maps URL",
+      "saveSettings": "Simpan Pengaturan",
+      "settingsSaved": "Pengaturan berhasil disimpan"
+    }
+  },
+  "barber": {
+    "schedule": {
+      "title": "Jadwal Saya",
+      "today": "Hari Ini",
+      "thisWeek": "Minggu Ini",
+      "noAppointments": "Tidak ada janji",
+      "customer": "Pelanggan",
+      "service": "Layanan",
+      "time": "Waktu"
+    },
+    "availability": {
+      "title": "Ketersediaan Saya",
+      "subtitle": "Atur jam kerja dan hari libur Anda"
+    }
+  }
+}
