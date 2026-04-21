@@ -1,5 +1,38 @@
-import type { Barber, BarberWithServices } from "@/types"
+import type { Barber, BarberService, BarberWithServices } from "@/types"
 import { createServerClient } from "@/lib/supabase/server"
+
+export async function getBarberServicesForBarber(
+  barberId: string,
+  barbershopId: string
+): Promise<(BarberService & { service_name: string })[]> {
+  const supabase = await createServerClient()
+  const { data, error } = await supabase
+    .from("barber_services")
+    .select("*, services(name)")
+    .eq("barber_id", barberId)
+    .eq("services.barbershop_id", barbershopId)
+  if (error) throw new Error(error.message)
+  return (data ?? []).map((row) => ({
+    ...row,
+    service_name: (row.services as { name: string } | null)?.name ?? "",
+  }))
+}
+
+export async function upsertBarberService(
+  barberId: string,
+  serviceId: string,
+  price: number,
+  isAvailable: boolean
+): Promise<void> {
+  const supabase = await createServerClient()
+  const { error } = await supabase
+    .from("barber_services")
+    .upsert(
+      { barber_id: barberId, service_id: serviceId, price, is_available: isAvailable },
+      { onConflict: "barber_id,service_id" }
+    )
+  if (error) throw new Error(error.message)
+}
 
 export async function getBarbersByShop(barbershopId: string): Promise<Barber[]> {
   const supabase = await createServerClient()
