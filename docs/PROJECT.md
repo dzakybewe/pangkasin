@@ -123,7 +123,7 @@ Each barbershop is identified by their subdomain slug:
 ### SaaS Marketing (pangkasin.com root domain)
 | Route | Page | Status |
 |---|---|---|
-| `/` | Pangkasin SaaS landing page | 🔴 Not started |
+| `/` | Pangkasin SaaS landing page | 🟢 Done |
 
 ### Public (Customer-facing, barbershop subdomains)
 | Route | Page | Status |
@@ -139,18 +139,18 @@ Each barbershop is identified by their subdomain slug:
 |---|---|---|
 | `/admin/login` | Login (shared with barbers) | 🟢 Done |
 | `/admin/dashboard` | Overview + stats | 🟢 Done |
-| `/admin/bookings` | Manage bookings | 🔴 Not started |
-| `/admin/team` | Manage barbers | 🔴 Not started |
-| `/admin/services` | Manage services | 🔴 Not started |
-| `/admin/availability` | Barber availability list | 🔴 Not started |
-| `/admin/availability/[barberId]` | Set hours for specific barber | 🔴 Not started |
+| `/admin/bookings` | Manage bookings | 🟢 Done |
+| `/admin/team` | Manage barbers | 🟢 Done |
+| `/admin/services` | Manage services | 🟢 Done |
+| `/admin/availability` | Barber availability list | 🟢 Done |
+| `/admin/availability/[barberId]` | Set hours for specific barber | 🟢 Done |
 | `/admin/settings` | Shop settings | 🟢 Done |
 
 ### Barber Portal
 | Route | Page | Status |
 |---|---|---|
-| `/barber/schedule` | My schedule | 🔴 Not started |
-| `/barber/availability` | My availability | 🔴 Not started |
+| `/barber/schedule` | My schedule | 🟢 Done |
+| `/barber/availability` | My availability | 🟢 Done |
 
 > Status: 🔴 Not started | 🟡 In progress | 🟢 Done
 
@@ -164,19 +164,19 @@ Each barbershop is identified by their subdomain slug:
 | Subdomain multi-tenant routing | 🟢 |
 | Supabase schema + RLS | 🟢 |
 | Auth (owner + barber login) | 🟢 |
-| Pangkasin SaaS landing page | 🔴 |
+| Pangkasin SaaS landing page | 🟢 |
 | Branded barbershop landing page | 🟢 |
 | Booking flow (3 steps + confirmation) | 🟢 |
 | Real-time slot availability | 🟢 |
 | Barber-based pricing (barber_services) | 🟢 |
 | Admin dashboard | 🟢 |
-| Manage bookings | 🔴 |
-| Team management | 🔴 |
-| Service management | 🔴 |
-| Barber availability management | 🔴 |
+| Manage bookings | 🟢 |
+| Team management | 🟢 |
+| Service management | 🟢 |
+| Barber availability management | 🟢 |
 | Shop settings | 🟢 |
-| Barber schedule view | 🔴 |
-| Barber availability self-management | 🔴 |
+| Barber schedule view | 🟢 |
+| Barber availability self-management | 🟢 |
 | i18n (id + en) | 🟢 |
 
 ### Deferred (v2+)
