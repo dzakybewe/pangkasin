@@ -68,6 +68,57 @@ export async function updateBookingStatus(
   if (error) throw new Error(error.message)
 }
 
+export async function getBookingById(
+  id: string,
+  barbershopId: string
+): Promise<BookingWithDetails | null> {
+  const supabase = await createServerClient()
+  const { data, error } = await supabase
+    .from("bookings")
+    .select("*, barber:barbers(id,name,photo_url), service:services(id,name,duration_minutes)")
+    .eq("id", id)
+    .eq("barbershop_id", barbershopId)
+    .single()
+  if (error) return null
+  return data as BookingWithDetails
+}
+
+export async function getDashboardStats(barbershopId: string): Promise<{
+  todayCount: number
+  weekCount: number
+  allTimeCount: number
+}> {
+  const supabase = await createServerClient()
+  const today = new Date().toISOString().split("T")[0]
+  const weekStart = new Date()
+  weekStart.setDate(weekStart.getDate() - weekStart.getDay())
+  const weekStartStr = weekStart.toISOString().split("T")[0]
+
+  const [todayRes, weekRes, allRes] = await Promise.all([
+    supabase
+      .from("bookings")
+      .select("id", { count: "exact", head: true })
+      .eq("barbershop_id", barbershopId)
+      .gte("datetime", `${today}T00:00:00`)
+      .lte("datetime", `${today}T23:59:59`),
+    supabase
+      .from("bookings")
+      .select("id", { count: "exact", head: true })
+      .eq("barbershop_id", barbershopId)
+      .gte("datetime", `${weekStartStr}T00:00:00`),
+    supabase
+      .from("bookings")
+      .select("id", { count: "exact", head: true })
+      .eq("barbershop_id", barbershopId),
+  ])
+
+  return {
+    todayCount: todayRes.count ?? 0,
+    weekCount: weekRes.count ?? 0,
+    allTimeCount: allRes.count ?? 0,
+  }
+}
+
 export async function getAvailableSlots(
   barberId: string,
   date: string
