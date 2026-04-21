@@ -7,11 +7,6 @@ import { Trash2, Plus } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import {
-  saveScheduleAction,
-  addBlockedDateAction,
-  deleteBlockedDateAction,
-} from "@/app/(admin)/admin/(protected)/availability/[barberId]/actions"
 import type { BlockedDate, Schedule } from "@/types"
 
 const DAYS = [0, 1, 2, 3, 4, 5, 6] as const
@@ -23,11 +18,16 @@ interface DaySchedule {
   closeTime: string
 }
 
+type ActionResult = Promise<{ success: boolean; error?: string }>
+
 interface AvailabilityManagerProps {
   barberId: string
   barberName: string
   initialSchedules: Schedule[]
   initialBlockedDates: BlockedDate[]
+  saveScheduleAction: (barberId: string, schedules: Omit<Schedule, "id">[]) => ActionResult
+  addBlockedDateAction: (barberId: string, date: string, reason: string) => ActionResult
+  deleteBlockedDateAction: (id: string, barberId: string) => ActionResult
 }
 
 export function AvailabilityManager({
@@ -35,6 +35,9 @@ export function AvailabilityManager({
   barberName,
   initialSchedules,
   initialBlockedDates,
+  saveScheduleAction,
+  addBlockedDateAction,
+  deleteBlockedDateAction,
 }: AvailabilityManagerProps) {
   const t = useTranslations("admin.availability")
   const router = useRouter()

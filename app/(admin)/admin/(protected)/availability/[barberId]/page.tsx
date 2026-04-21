@@ -6,6 +6,11 @@ import { createServerClient } from "@/lib/supabase/server"
 import { getBarberById } from "@/lib/supabase/queries/barbers"
 import { getScheduleByBarber, getBlockedDates } from "@/lib/supabase/queries/availability"
 import { AvailabilityManager } from "@/components/admin/AvailabilityManager"
+import {
+  saveScheduleAction,
+  addBlockedDateAction,
+  deleteBlockedDateAction,
+} from "./actions"
 
 export default async function BarberAvailabilityPage({
   params,
@@ -53,6 +58,9 @@ export default async function BarberAvailabilityPage({
         barberName={barber.name}
         initialSchedules={schedules}
         initialBlockedDates={blockedDates}
+        saveScheduleAction={saveScheduleAction}
+        addBlockedDateAction={addBlockedDateAction}
+        deleteBlockedDateAction={deleteBlockedDateAction}
       />
     </div>
   )
