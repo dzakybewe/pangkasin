@@ -120,26 +120,31 @@ Each barbershop is identified by their subdomain slug:
 
 ## Routes
 
-### Public (Customer-facing)
+### SaaS Marketing (pangkasin.com root domain)
 | Route | Page | Status |
 |---|---|---|
-| `/` | Landing page | 🔴 Not started |
-| `/booking` | Step 1: Select service | 🔴 Not started |
-| `/booking/barber` | Step 2: Select barber | 🔴 Not started |
-| `/booking/schedule` | Step 3: Schedule & details | 🔴 Not started |
-| `/booking/confirmation` | Booking confirmed | 🔴 Not started |
+| `/` | Pangkasin SaaS landing page | 🔴 Not started |
+
+### Public (Customer-facing, barbershop subdomains)
+| Route | Page | Status |
+|---|---|---|
+| `/` | Barbershop landing page | 🟢 Done |
+| `/booking` | Step 1: Select service | 🟢 Done |
+| `/booking/barber` | Step 2: Select barber | 🟢 Done |
+| `/booking/schedule` | Step 3: Schedule & details | 🟢 Done |
+| `/booking/confirmation` | Booking confirmed | 🟢 Done |
 
 ### Admin (Owner)
 | Route | Page | Status |
 |---|---|---|
-| `/admin/login` | Login (shared with barbers) | 🔴 Not started |
-| `/admin/dashboard` | Overview + stats | 🔴 Not started |
+| `/admin/login` | Login (shared with barbers) | 🟢 Done |
+| `/admin/dashboard` | Overview + stats | 🟢 Done |
 | `/admin/bookings` | Manage bookings | 🔴 Not started |
 | `/admin/team` | Manage barbers | 🔴 Not started |
 | `/admin/services` | Manage services | 🔴 Not started |
 | `/admin/availability` | Barber availability list | 🔴 Not started |
 | `/admin/availability/[barberId]` | Set hours for specific barber | 🔴 Not started |
-| `/admin/settings` | Shop settings | 🔴 Not started |
+| `/admin/settings` | Shop settings | 🟢 Done |
 
 ### Barber Portal
 | Route | Page | Status |
@@ -156,22 +161,23 @@ Each barbershop is identified by their subdomain slug:
 ### v1 — In Scope
 | Feature | Status |
 |---|---|
-| Subdomain multi-tenant routing | 🔴 |
-| Supabase schema + RLS | 🔴 |
-| Auth (owner + barber login) | 🔴 |
-| Branded landing page | 🔴 |
-| Booking flow (3 steps + confirmation) | 🔴 |
-| Real-time slot availability | 🔴 |
-| Barber-based pricing (barber_services) | 🔴 |
-| Admin dashboard | 🔴 |
+| Subdomain multi-tenant routing | 🟢 |
+| Supabase schema + RLS | 🟢 |
+| Auth (owner + barber login) | 🟢 |
+| Pangkasin SaaS landing page | 🔴 |
+| Branded barbershop landing page | 🟢 |
+| Booking flow (3 steps + confirmation) | 🟢 |
+| Real-time slot availability | 🟢 |
+| Barber-based pricing (barber_services) | 🟢 |
+| Admin dashboard | 🟢 |
 | Manage bookings | 🔴 |
 | Team management | 🔴 |
 | Service management | 🔴 |
 | Barber availability management | 🔴 |
-| Shop settings | 🔴 |
+| Shop settings | 🟢 |
 | Barber schedule view | 🔴 |
 | Barber availability self-management | 🔴 |
-| i18n (id + en) | 🔴 |
+| i18n (id + en) | 🟢 |
 
 ### Deferred (v2+)
 - WhatsApp notifications

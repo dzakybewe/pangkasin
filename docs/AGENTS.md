@@ -114,8 +114,10 @@ const barber: any = {}
 ```
 pangkasin/
 ├── app/
-│   ├── (public)/           # Customer-facing routes
-│   │   ├── page.tsx        # Landing page (/)
+│   ├── (saas)/             # SaaS marketing routes — root domain only (pangkasin.com)
+│   │   └── page.tsx        # Pangkasin SaaS landing page
+│   ├── (public)/           # Customer-facing routes — barbershop subdomains
+│   │   ├── page.tsx        # Barbershop landing page (shop.pangkasin.com/)
 │   │   └── booking/
 │   │       ├── page.tsx              # Step 1: Select service
 │   │       ├── barber/page.tsx       # Step 2: Select barber
@@ -124,14 +126,16 @@ pangkasin/
 │   ├── (admin)/            # Owner routes
 │   │   └── admin/
 │   │       ├── login/page.tsx
-│   │       ├── dashboard/page.tsx
-│   │       ├── bookings/page.tsx
-│   │       ├── team/page.tsx
-│   │       ├── services/page.tsx
-│   │       ├── availability/
-│   │       │   ├── page.tsx              # List barbers to select
-│   │       │   └── [barberId]/page.tsx   # Set hours for specific barber
-│   │       └── settings/page.tsx
+│   │       ├── (protected)/          # Auth-gated admin pages
+│   │       │   ├── layout.tsx        # Sidebar + auth check
+│   │       │   ├── dashboard/page.tsx
+│   │       │   ├── bookings/page.tsx
+│   │       │   ├── team/page.tsx
+│   │       │   ├── services/page.tsx
+│   │       │   ├── availability/
+│   │       │   │   ├── page.tsx              # List barbers to select
+│   │       │   │   └── [barberId]/page.tsx   # Set hours for specific barber
+│   │       │   └── settings/page.tsx
 │   ├── (barber)/           # Barber routes
 │   │   └── barber/
 │   │       ├── schedule/page.tsx
