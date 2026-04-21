@@ -20,6 +20,9 @@ export interface Location {
   city: string
   province: string
   phone: string
+  email: string | null
+  instagram: string | null
+  whatsapp: string | null
   maps_url: string | null
   is_active: boolean
 }
