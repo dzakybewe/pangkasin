@@ -161,7 +161,7 @@
       "service": "Layanan",
       "barber": "Barber",
       "dateTime": "Tanggal & Waktu",
-      "status": {
+      "statuses": {
         "pending": "Menunggu",
         "confirmed": "Terkonfirmasi",
         "done": "Selesai",
@@ -248,6 +248,62 @@
       "googleMaps": "Google Maps URL",
       "saveSettings": "Simpan Pengaturan",
       "settingsSaved": "Pengaturan berhasil disimpan"
+    }
+  },
+  "saas": {
+    "nav": {
+      "features": "Fitur",
+      "pricing": "Harga",
+      "about": "Tentang",
+      "cta": "Mulai Sekarang"
+    },
+    "hero": {
+      "badge": "Platform Barbershop #1 di Indonesia",
+      "title": "Website & Booking Online untuk Barbershop Kamu",
+      "subtitle": "Subdomain branded, sistem booking online, dan dashboard admin — semua dalam satu platform.",
+      "ctaPrimary": "Mulai Sekarang",
+      "ctaSecondary": "Lihat Fitur"
+    },
+    "problem": {
+      "title": "Masih Pakai Cara Lama?",
+      "subtitle": "Banyak barbershop masih bergantung cara manual yang bikin ribet."
+    },
+    "features": {
+      "title": "Semua yang Kamu Butuhkan",
+      "subtitle": "Satu platform lengkap untuk digitalkan barbershop kamu."
+    },
+    "howItWorks": {
+      "title": "Cara Kerjanya Simpel",
+      "subtitle": "3 langkah untuk mulai terima booking online."
+    },
+    "pricing": {
+      "title": "Harga Transparan",
+      "subtitle": "Satu paket, semua fitur. Tanpa biaya tersembunyi.",
+      "plan": "Starter",
+      "monthlyPrice": "Rp 149.000",
+      "monthlyPer": "/bulan",
+      "annualPrice": "Rp 1.490.000",
+      "annualPer": "/tahun",
+      "annualSaving": "Hemat 2 bulan!",
+      "cta": "Mulai Sekarang",
+      "note": "Belum siap? Hubungi kami dulu."
+    },
+    "testimonials": {
+      "title": "Apa Kata Mereka",
+      "subtitle": "Barbershop yang sudah pakai Pangkasin."
+    },
+    "faq": {
+      "title": "Pertanyaan Umum"
+    },
+    "cta": {
+      "title": "Siap Digitalkan Barbershop Kamu?",
+      "subtitle": "Setup cepat, langsung live. Tidak perlu keahlian teknis.",
+      "button": "Mulai Trial 14 Hari Gratis",
+      "note": "Tidak perlu kartu kredit."
+    },
+    "footer": {
+      "tagline": "Platform booking online untuk barbershop Indonesia.",
+      "rights": "Hak cipta dilindungi"
     }
   },
   "barber": {

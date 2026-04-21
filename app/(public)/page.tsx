@@ -5,6 +5,7 @@ import { getTranslations } from "next-intl/server"
 import { MapPin, Phone, Mail, Clock, AtSign } from "lucide-react"
 import { getPublicShopData } from "@/lib/supabase/queries/public"
 import { PublicNavbar } from "@/components/shared/PublicNavbar"
+import { SaasLandingPage } from "@/components/saas/SaasLandingPage"
 
 export default async function PublicLandingPage() {
   const headersList = await headers()
@@ -13,17 +14,7 @@ export default async function PublicLandingPage() {
   const tn = await getTranslations("nav")
 
   if (!slug) {
-    return (
-      <main className="min-h-screen bg-bg-base flex items-center justify-center px-4">
-        <div className="text-center">
-          <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center mx-auto mb-4">
-            <span className="text-text-inverse font-bold text-lg">P</span>
-          </div>
-          <h1 className="text-2xl font-bold text-text-primary mb-2">Pangkasin</h1>
-          <p className="text-text-secondary">Akses melalui subdomain toko Anda</p>
-        </div>
-      </main>
-    )
+    return <SaasLandingPage />
   }
 
   const data = await getPublicShopData(slug)

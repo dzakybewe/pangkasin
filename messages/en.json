@@ -251,6 +251,62 @@
       "settingsSaved": "Settings saved successfully"
     }
   },
+  "saas": {
+    "nav": {
+      "features": "Features",
+      "pricing": "Pricing",
+      "about": "About",
+      "cta": "Get Started"
+    },
+    "hero": {
+      "badge": "The #1 Barbershop Platform in Indonesia",
+      "title": "Website & Online Booking for Your Barbershop",
+      "subtitle": "Branded subdomain, online booking system, and admin dashboard — all in one platform.",
+      "ctaPrimary": "Get Started",
+      "ctaSecondary": "See Features"
+    },
+    "problem": {
+      "title": "Still Doing It the Old Way?",
+      "subtitle": "Many barbershops still rely on manual processes that slow them down."
+    },
+    "features": {
+      "title": "Everything You Need",
+      "subtitle": "One complete platform to digitalize your barbershop."
+    },
+    "howItWorks": {
+      "title": "Simple to Get Started",
+      "subtitle": "3 steps to start accepting online bookings."
+    },
+    "pricing": {
+      "title": "Transparent Pricing",
+      "subtitle": "One plan, all features. No hidden fees.",
+      "plan": "Starter",
+      "monthlyPrice": "Rp 149,000",
+      "monthlyPer": "/month",
+      "annualPrice": "Rp 1,490,000",
+      "annualPer": "/year",
+      "annualSaving": "Save 2 months!",
+      "cta": "Get Started",
+      "note": "Not ready? Contact us first."
+    },
+    "testimonials": {
+      "title": "What They're Saying",
+      "subtitle": "Barbershops already using Pangkasin."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions"
+    },
+    "cta": {
+      "title": "Ready to Digitalize Your Barbershop?",
+      "subtitle": "Quick setup, live instantly. No technical skills required.",
+      "button": "Start 14-Day Free Trial",
+      "note": "No credit card required."
+    },
+    "footer": {
+      "tagline": "Online booking platform for Indonesian barbershops.",
+      "rights": "All rights reserved"
+    }
+  },
   "barber": {
     "schedule": {
       "title": "My Schedule",
