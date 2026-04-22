@@ -3,13 +3,10 @@ import { createServerClient } from "@supabase/ssr"
 
 function extractShopSlug(hostname: string): string | null {
   const appDomain = process.env.NEXT_PUBLIC_APP_DOMAIN ?? "localhost"
-  // Strip port if present
   const host = hostname.split(":")[0]
 
   if (host === "localhost" || host === appDomain) return null
 
-  // kings-cut.pangkasin.com → "kings-cut"
-  // kings-cut.localhost     → "kings-cut"
   if (host.endsWith(`.${appDomain}`) || host.endsWith(".localhost")) {
     return host.split(".")[0] ?? null
   }
@@ -17,13 +14,13 @@ function extractShopSlug(hostname: string): string | null {
   return null
 }
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const { pathname } = new URL(request.url)
   const hostname = request.headers.get("host") ?? ""
   const shopSlug = extractShopSlug(hostname)
 
-  // ── Forward shop slug to Server Components via request header ─
-  // Must be set on the request (not response) for headers() in Server Components to see it
+  // Forward shop slug to Server Components via request header.
+  // Must be set on the request (not response) for headers() in Server Components to see it.
   const requestHeaders = new Headers(request.headers)
   if (shopSlug) requestHeaders.set("x-shop-slug", shopSlug)
 
